@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Internal Styling
+		</title>
+		<style>
+			/*attribute selector*/
+			[href]{
+				color: olive;
+			}
+			
+			/*combining attribute and type selector*/
+			a[href]{
+				text-decoration:none;
+			}
+			
+			/*attribute+value match selector*/
+			a[href="https://www.google.com"]{
+				font-size: 1.2em;
+			}
+			
+			a[target="_blank"]{
+				color: purple;
+			}
+		</style>
+	</head>
+	<body>	
+		<a href="https://www.google.com">Google Search</a>
+		<a href="https://www.google.com" target="_blank">Google Search page</a>
+		
+		<span>
+			span 1
+		</span>
+		
+		<a href="https://www.facebook.com">Facebook</a>
+		
+		<span>
+			span 2
+		</span>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Combining selector
+		</title>
+		<style>
+			/* (a, b, c, d)*/
+			/*(0/1, numbers of times ids appear, number of times classes appears, number of times types appear)*/
+			/* (0, 0, 0, 2)*/
+			ul > li{
+				cursor: pointer;
+			}
+			
+			/* (0, 0, 2, 4)*/
+			div ul > li.highlight:hover > span{
+				background-color: goldenrod;
+			 }
+			
+			/* (0, 0, 2, 3)*/
+			ul > li.highlight:hover{
+				background-color: olive;
+			}
+		</style>
+	</head>
+	<body>
+		 <div>
+			After Venom appeared in Spider-Man 3 (2007), Sony attempted to develop a spin-off film based on the character. Work began in March 2016 on a new version that would start a new shared universe featuring the Marvel characters that the studio possessed film rights to. Sony also intended for Venom to share the world of the Marvel Cinematic Universe's Spider-Man: Homecoming (2017), but ultimately distanced the film from Spider-Man. In March 2017, Rosenberg and Pinkner were set to write, with Fleischer and Hardy added in May.
+
+			<ul>
+				<li>One</li><!-- style="cursor: pointer;"(1, 0, 0, 0)-->
+				<li class="highlight">Two</li>
+				<li>Three</li>
+			</ul>
+		</div>
+		
+		<ul>
+			<li>Apples</li>
+			<li>Oranges</li>
+			<li>Bananas</li>
+		</ul>
+	</body>
+</html>
